@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Code Portal</title>
-    <script>
-        window.onload = function() {
-            window.location.href = 'https://itnoto.com';
+    <title>Development Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
         }
-    </script>
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <p>Redirecting to development environment...</p>
+    <div class="container">
+        <h1>Development Environment</h1>
+        <p>Click below to access the development environment</p>
+        <a href="https://itnoto.com" class="button">Launch IDE</a>
+    </div>
 </body>
 </html>
