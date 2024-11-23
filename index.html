@@ -28,13 +28,29 @@
             border-radius: 4px;
             margin-top: 20px;
         }
+        #status {
+            margin-top: 20px;
+            color: #666;
+        }
     </style>
+    <script>
+        async function launchIDE() {
+            try {
+                // Replace this URL with your Cloudflare Worker URL once created
+                const proxyUrl = 'https://code-proxy.kenanpsimpson.workers.dev/';
+                window.location.href = proxyUrl;
+            } catch (error) {
+                document.getElementById('status').textContent = 'Error connecting to environment. Please try again.';
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <h1>Development Environment</h1>
         <p>Click below to access the development environment</p>
-        <a href="https://itnoto.com" class="button">Launch IDE</a>
+        <a href="#" onclick="launchIDE(); return false;" class="button">Launch IDE</a>
+        <div id="status"></div>
     </div>
 </body>
 </html>
